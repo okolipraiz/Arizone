@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  line-height: 1.6;
+}
+
+.showcase {
+  background-color: #0082e6;
+  height: 600px;
+}
+
+.container {
+  max-width: 1100px;
+  padding: 0 30px;
+  margin: 0 auto;
+  overflow: auto;
+  position: relative;
+  top: 25vh;
+}
+
+.m-space {
+  margin: 1rem;
+}
+
+.my-space {
+  margin: 1rem 0;
+}
+
+.p-space {
+  padding: 1rem;
+}
+
+.py-space {
+  padding: 1rem 0;
+}
+
+.m-space {
+  margin: 2rem;
+}
+
+.my-space {
+  margin: 2rem 0;
+}
+
+.p-space {
+  padding: 2rem;
+}
+
+.py-space {
+  padding: 2rem 0;
+}
+
+.m-space {
+  margin: 3rem;
+}
+
+.my-space {
+  margin: 3rem 0;
+}
+
+.p-space {
+  padding: 3rem;
+}
+
+.py-space {
+  padding: 3rem 0;
+}
+
+.m-space {
+  margin: 4rem;
+}
+
+.my-space {
+  margin: 4rem 0;
+}
+
+.p-space {
+  padding: 4rem;
+}
+
+.py-space {
+  padding: 4rem 0;
+}
+
+.m-space {
+  margin: 5rem;
+}
+
+.my-space {
+  margin: 5rem 0;
+}
+
+.p-space {
+  padding: 5rem;
+}
+
+.py-space {
+  padding: 5rem 0;
+}
+
+@media (max-width: 700px) {
+  h1 {
+    font-size: 22.5px !important;
+  }
+
+  .showcase-content {
+    text-align: left;
+    padding-top: 30px;
+  }
+  .showcase-content img {
+    display: flex;
+    top: 150px;
+    position: relative;
+    left: -20vh;
+  }
+}
+
+img {
+  width: 100%;
+}
+
+.showcase-content {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.showcase-content img {
+  width: 50%;
+}
+.showcase-content h1 {
+  font-size: 50px;
+  line-height: 1.2;
+  color: #fff;
+}
+
+.showcase-content p {
+  margin: 20px 0 !important;
+  color: black;
+}

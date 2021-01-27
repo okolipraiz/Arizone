@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+    <title>Login</title>
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/login.css">
+</head>
+<body>
+
+
+    <nav>
+        <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+    </label>
+     <label class="logo"><a href="../HTML/home.html">WEL<span style="color: orange;">THYTEAM</span></a></label>
+     <ul>
+         <li><a href="#">Home</a></li>
+         <li><a href="#">About</a></li>
+         <li><a href="#">Services</a></li>
+         <li><a href="../HTML/profile.html">Profile</a></li>
+         <li><a href="#">Plan</a></li>
+         <li><a href="../HTML/login.html">Login</a></li>
+     </ul>
+    </nav>
+
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+        nav{
+            background: #0082e6;
+            width: 100%;
+            height: 80px;
+            box-shadow: 0.5px 3px 3px 0.5px #333 !important;
+            z-index: 9999;
+            position: fixed;
+            
+        }
+    
+        label.logo a{
+            color: #fff ;
+            font-size: 18px;
+            line-height: 72px;
+            padding: 0 20px;
+            font-weight: bold;
+            font-family: "Poppins", sans-serif;
+            cursor: pointer;
+            text-decoration: none;
+        }
+    
+        nav ul{
+            float: right;
+            margin-right: 20px;
+            z-index: 9999;
+    
+        }
+    
+        nav ul li{
+            display: inline-block;
+            line-height: 80px;
+            margin: 0 5px;
+            
+        }
+    
+        nav ul li a{
+            color: #fff;
+            font-size: 15px;
+            font-weight: 700;
+            border-radius: 3px;
+            padding: 7px 13px;
+            text-decoration: none;
+        
+        }
+    
+        nav ul li a:hover{
+            color: orange;
+            transition: .5s;
+        }
+    
+        .checkbtn{
+            float: right;
+            line-height: 72px;
+            color: #fff;
+            font-size: 23px;
+            margin-right: 40px;
+            cursor: pointer;
+            display: none;
+        }
+    
+        #check{
+            display: none;
+        }
+    
+        @media (max-width: 952px) {
+            label.logo{
+                font-size: 14.5px;
+                padding: 0 -2.5px;
+                /*line-height: 80px;*/
+            }
+    
+    
+           nav ul li a{
+               font-size: 16px;
+               line-height: 25px;
+    
+           }
+        }
+    
+        @media (max-width: 858px) {
+            .checkbtn{
+            display: block;
+        }
+    
+          ul{
+              position: fixed;
+              width: 100%;
+              height: 100vh;
+              background: #0082e6;
+              top: 80px;
+              left: -100%;
+              text-align: center;
+              transition: all .5s;
+          }
+    
+          nav ul li{
+              display: block;
+              color: #fff ;
+              margin: 0.5px 5px;
+              
+              
+          }
+    
+          nav ul li a{
+              font-size: 20px;
+              
+          }
+    
+          #check:checked ~ ul{
+              left: 0;
+          }
+        }
+    
+    </style>
+
+    <div class="container">
+        <div class="forms-container">
+            <div class="signin-signup">
+
+                <form action="" class="sign-in-form">
+                    <h2 class="title">Sign In</h2>
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="Username">
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Password">
+                    </div>
+                    <input type="submit" value="Login" class="btn solid">
+
+                  <p class="social-text">Or Sign in with social platform</p>
+                  <div class="social-media">
+                      <a href="#" class="social-icon">
+                          <i class="fab fa-facebook-f"></i>
+                      </a>
+
+                      <a href="#" class="social-icon">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-google"></i>
+                    </a>
+
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                  </div>
+                </form>
+
+                <form action="" class="sign-up-form">
+                    <h2 class="title">Sign up</h2>
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="Username">
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" placeholder="Email">
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Password">
+                    </div>
+                    <input type="submit" value="Sign up" class="btn solid">
+
+                  <p class="social-text">Or Sign up with social platform</p>
+                  <div class="social-media">
+                      <a href="#" class="social-icon">
+                          <i class="fab fa-facebook-f"></i>
+                      </a>
+
+                      <a href="#" class="social-icon">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-google"></i>
+                    </a>
+
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                  </div>
+                </form>
+                
+            </div>
+        </div>
+        <div class="panels-container">
+            <div class="panel left-panel">
+                <div class="content">
+                    <h3>New Here?</h3>
+                    <p>Lorem ipsum a quos error tempora, aperiam amet cum animi.</p>
+                    <button class="btn transparent" id="sign-up-btn">Sign up</button>
+                </div>
+
+                <img src="../SVG/log.svg" alt="" class="image">
+            </div>
+
+                <div class="panel right-panel">
+                    <div class="content">
+                        <h3>One of us?</h3>
+                        <p>Lorem ipsum a quos error tempora, aperiam amet cum animi.</p>
+                        <button class="btn transparent" id="sign-in-btn">Sign in</button>
+                    </div>
+    
+                    <img src="../SVG/reg.svg" alt="" class="image">
+                  </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="../JS/login.js"></script>
+</body>
+</html>
